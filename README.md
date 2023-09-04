@@ -28,7 +28,18 @@
 
 :warning: 既に[新規アプリケーションを作成](#新規アプリケーションの作成)している前提。 :warning:
 
+#### 共通の設定
+
 1. `make .env` を実行
-1. 作成された docker/.env にそれぞれの値を設定
+1. 作成された docker/.env の設定を行う
+
+#### VSCode の devcontainer を利用する場合
+
+1. [共通の設定](#共通の設定)を行う
+1. VSCode のコマンドパレットから `Dev Containers: Reopen in Container` を実行
+
+#### その他の場合
+
+1. [共通の設定](#共通の設定)を行う
 1. `make up` を実行
 1. (コンテナ停止時) `make down` を実行
